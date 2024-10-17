@@ -8,7 +8,7 @@ const Student=require('./Student')
 const app=express();
 const PORT=3000
 app.use(bodyparser.json());
-const DB_URL="mongodb://localhost:27017/shop"; //mongodblink
+const DB_URL = "mongodb+srv://DBuser:R%40mesh123@Ramesh9361.0grkj.mongodb.net/mydatabase?retryWrites=true&w=majority";
 
 
 //connect to mongodb
