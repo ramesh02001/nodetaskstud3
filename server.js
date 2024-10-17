@@ -6,10 +6,9 @@ const mongoose=require('mongoose'); //import monges
 const Mentor=require('./Mentor')
 const Student=require('./Student')
 const app=express();
-const PORT=3000
+const PORT=process.env.PORT
 app.use(bodyparser.json());
-const DB_URL = "mongodb+srv://DBuser:R%40mesh123@Ramesh9361.0grkj.mongodb.net/mydatabase?retryWrites=true&w=majority";
-
+const DB_URL = process.env.MONGO_URI
 
 //connect to mongodb
 mongoose
